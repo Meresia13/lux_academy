@@ -1,0 +1,59 @@
+ /**
+   *Let’s say you’re a Product Data Scientist at Instagram. How would you measure the success of the Instagram TV product?
+   *Inorder to measure the success of IG TV. I will use the following metrics - User Watch Time, User Viewership and User Retention.
+   *In the codes below, hypothetical data will be used since IG does not share access to it's API due to privacy reasons.
+   */
+
+ /**
+   *Watch time
+   */
+# Sample watch time data (in seconds) for multiple IGTV videos
+watch_time_data = [150, 160, 180, 350, 400, 450, 660, 700, 777, 851]
+
+# Calculate total watch time
+total_watch_time = sum(watch_time_data)
+
+# Define a watch time threshold for success (hypothetical threshold: 3000 seconds)
+success_threshold = 3000
+
+# Measure the success of watch time using an if-else statement
+if total_watch_time >= success_threshold:
+    print(f'Total watch time of {total_watch_time} seconds is a success!')
+else:
+    print(f'Total watch time of {total_watch_time} seconds is below the desired threshold.')
+
+ /**
+   *Viewership
+   */
+# Sample viewership data (number of views) for multiple IGTV videos
+viewership_data = [2000, 3000, 3300, 4100, 4500, 5500, 5800, 6020, 6990, 8000]
+
+# Calculate average viewership
+average_viewership = sum(viewership_data) / len(viewership_data)
+
+# Define a viewership threshold for success (hypothetical threshold: 3200 views)
+success_threshold = 3200
+
+# Measure the success of viewership using an if-else statement
+if average_viewership >= success_threshold:
+    print(f'Average viewership of {average_viewership} views is a success!')
+else:
+    print(f'Average viewership of {average_viewership} views is below the desired threshold.')
+
+ /**
+   *Retention
+   */
+# Sample retention rate data (in percentage) for multiple IGTV videos
+retention_rates = [90, 75, 55, 90, 60, 92, 19, 82, 44, 89]
+
+# Calculate average retention rate
+average_retention_rate = sum(retention_rates) / len(retention_rates)
+
+# Define a retention rate threshold for success (hypothetical threshold: 85%)
+success_threshold = 85
+
+# Measure the success of retention rate using an if-else statement
+if average_retention_rate >= success_threshold:
+    print(f'Average retention rate of {average_retention_rate}% is a success!')
+else:
+    print(f'Average retention rate of {average_retention_rate}% is below the desired threshold.')
